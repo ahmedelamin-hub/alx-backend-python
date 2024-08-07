@@ -5,6 +5,7 @@ Module for async function that waits for a random delay
 
 import asyncio
 import random
+from typing import Union
 
 async def wait_random(max_delay: int = 10) -> float:
     """

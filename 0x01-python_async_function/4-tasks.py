@@ -5,7 +5,7 @@ Module for concurrent execution of multiple task_wait_random coroutines
 
 import asyncio
 from typing import List
-from 3-tasks import task_wait_random
+task_wait_random = __import__('3-tasks').task_wait_random
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
